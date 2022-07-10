@@ -1,3 +1,4 @@
+import { imageListItemClasses } from "@mui/material";
 import axios from "axios";
 import React, { ReactNode, useContext, useEffect, useState } from "react";
 
@@ -41,9 +42,24 @@ export function SettingProvider({ children }: SettingProviderProps) {
       axios
         .get("https://kcd71461.github.io/hs-image-viewer/setting.json")
         .then((res) => {
+          const data = res.data as TSetting;
+          preload(
+            data.data.reduce((prev, current) => {
+              if (current.image) {
+                prev.push(current.image);
+              }
+              if (current.res) {
+                prev.push(current.res);
+              }
+              if (current.sem) {
+                prev.push(current.sem);
+              }
+              return prev;
+            }, [] as string[])
+          );
           setSetting({
             isLoading: false,
-            setting: res.data as TSetting,
+            setting: data,
           });
         })
         .catch((error: any) => {
@@ -70,4 +86,11 @@ export function SettingProvider({ children }: SettingProviderProps) {
 export function useSettingContext() {
   const context = useContext(SettingContext);
   return context;
+}
+
+function preload(images: string[]) {
+  for (let image of images) {
+    const imageEl = new Image();
+    imageEl.src = image;
+  }
 }

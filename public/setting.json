@@ -2,27 +2,27 @@
   "data": [
     {
       "id": "499",
-      "image": "/assets/images/499.png",
-      "res": "/assets/images/res_499.png",
-      "sem": "/assets/images/sem_499.png"
+      "image": "https://kcd71461.github.io/hs-image-viewer/assets/images/499.png",
+      "res": "https://kcd71461.github.io/hs-image-viewer/assets/images/res_499.png",
+      "sem": "https://kcd71461.github.io/hs-image-viewer/assets/images/sem_499.png"
     },
     {
       "id": "500",
-      "image": "/assets/images/500.png",
-      "res": "/assets/images/res_499.png",
-      "sem": "/assets/images/sem_499.png"
+      "image": "https://kcd71461.github.io/hs-image-viewer/assets/images/500.png",
+      "res": "https://kcd71461.github.io/hs-image-viewer/assets/images/res_499.png",
+      "sem": "https://kcd71461.github.io/hs-image-viewer/assets/images/sem_499.png"
     },
     {
       "id": "501",
-      "image": "/assets/images/501.png",
-      "res": "/assets/images/res_499.png",
-      "sem": "/assets/images/sem_499.png"
+      "image": "https://kcd71461.github.io/hs-image-viewer/assets/images/501.png",
+      "res": "https://kcd71461.github.io/hs-image-viewer/assets/images/res_499.png",
+      "sem": "https://kcd71461.github.io/hs-image-viewer/assets/images/sem_499.png"
     },
     {
       "id": "502",
-      "image": "/assets/images/502.png",
-      "res": "/assets/images/res_499.png",
-      "sem": "/assets/images/sem_499.png"
+      "image": "https://kcd71461.github.io/hs-image-viewer/assets/images/502.png",
+      "res": "https://kcd71461.github.io/hs-image-viewer/assets/images/res_499.png",
+      "sem": "https://kcd71461.github.io/hs-image-viewer/assets/images/sem_499.png"
     }
   ]
 }

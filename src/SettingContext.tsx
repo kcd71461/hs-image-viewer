@@ -39,7 +39,7 @@ export function SettingProvider({ children }: SettingProviderProps) {
     setSetting({ isLoading: true, setting: null, error: undefined });
     window.setTimeout(() => {
       axios
-        .get("/setting.json")
+        .get("https://kcd71461.github.io/hs-image-viewer/setting.json")
         .then((res) => {
           setSetting({
             isLoading: false,

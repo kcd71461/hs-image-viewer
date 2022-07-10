@@ -1,0 +1,42 @@
+@use "../../variables.scss" as *;
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  animation: mount 0.3s;
+  will-change: width;
+  .results {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    p {
+      margin: 0.5rem;
+      text-align: center;
+    }
+    .image {
+      width: $right-image-width;
+      border-radius: 5px;
+    }
+    .skeleton {
+      width: $right-image-width;
+      height: calc($right-image-width / 2);
+      border-radius: 5px;
+      background-color: rgba(120, 120, 120, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@keyframes mount {
+  from {
+    flex: 0;
+  }
+  to {
+    flex: 1;
+  }
+}

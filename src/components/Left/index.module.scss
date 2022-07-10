@@ -1,0 +1,41 @@
+@use "../../variables.scss" as *;
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  will-change: transform;
+  font-size: 1em;
+  will-change: all;
+  transition: width 0.3s, font-size 0.2s;
+  .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    overflow-x: hidden;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 1rem;
+    > img {
+      width: $left-image-width;
+      height: auto;
+      filter: grayscale(60%);
+      transition: transform 0.2s, filter 0.2s;
+      cursor: pointer;
+      border-radius: 5px;
+      &.selected,
+      &:hover {
+        filter: grayscale(0%);
+      }
+
+      &.selected {
+        transform: scale(1.05);
+        box-shadow: 0 0 0.4rem rgba(120, 120, 255, 0.5);
+      }
+    }
+  }
+}
